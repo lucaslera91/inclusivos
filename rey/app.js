@@ -17,7 +17,7 @@ if ('speechSynthesis' in window) {
 msg.text = "Folgue, hay conflicto de interes si me pagas a mi?";
 msg.voice = voices[10];
 msg.volume = 0.9; // From 0 to 1
-msg.rate = 0.1; // From 0.1 to 10
+msg.rate = 2; // From 0.1 to 10
 msg.pitch = 1; // From 0 to 2
 msg.lang = 'es';
 
