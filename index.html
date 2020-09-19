@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./rey/style.css">
 </head>
+
 <body>
     <h1>Esto es mejor que Zara, es Molinos! mas top todavia</h1>
-   
+
     <h2>Folgue, hay conflicto de interes si me pagas a mi?</h2>
 
     <p>Podemos hacerlo nosotros!</p>
     <p>YAY!</p>
-    <div id="fondo"><button>Fondo</button></div>
-    <h2>Let's Create a Color Picker</h2>
+    <div id="fondo">
+        <div class="slidecontainer">
+            <input onchange="fcColor()" id="scale" type="color" 
+            min="0" max="100" value="50" class="slider"
+        oninput="scaledisp.value = scale.value">
+       
+        </div>
+        <button id="boton">Fondo</button>
+    </div>
+    <div>
+        <div class="slidecontainer">
+            <input onchange="fcLetras()" id="letras" type="color" 
+            min="0" max="100" value="50" class="slider">
+        </div>
+        <button id="boton">Letras</button>
+    </div>
+    <div>
+        <div class="slidecontainer">
+            <input onchange="fcFont()" id="font" type="range" 
+            min="0" max="50" value="20" class="slider">
+        </div>
+        <button id="boton">Font</button>
+    </div>
+    <!-- <h2>Let's Create a Color Picker</h2>
     <div class="container">
       <canvas id="color-picker"></canvas>
-      
        <div class="selected"></div>
-    
-    </div>
+    </div> -->
 
-<img src="https://i.pinimg.com/originals/54/ac/63/54ac63c50143b3c259e14a0a44db3ad9.jpg" alt="">
-<script src="./rey/app.js"></script>
-<script src="./rey/colores.js"></script>
+    <img src="https://i.pinimg.com/originals/54/ac/63/54ac63c50143b3c259e14a0a44db3ad9.jpg" alt="">
+    <script src="./rey/app.js"></script>
+    <script src="./rey/colores.js"></script>
 </body>
+
 </html>
